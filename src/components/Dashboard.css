@@ -6,7 +6,8 @@
 }
 
 .dashboard__heading {
-    height: 109px;
+    width: 703px;
+    height: 190px;
     display: flex;
     align-items: center;
     font-size: 40px;
@@ -179,9 +180,9 @@
     margin-top: 23px;
 }
 
-.chart__second {
-    right: 11px;
-    top: -21px;
+.chart__day {
+    display: flex;
+    flex-direction: column;
 }
 
 .point_names {
@@ -248,4 +249,33 @@
     font-size: 18px;
     color: rgba(0, 0, 0, 0.2);
     right: 9px;
+}
+
+@media only screen and (max-width: 600px) {
+    .company__status__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        width: 600px;
+    }
+
+    .expense__task_card {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .task__body {
+        width: 600px;
+    }
+
+    .prog__container {
+        margin-top: 12px;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .progress__box {
+        width: 100%;
+    }
 }

@@ -1,28 +1,60 @@
-import React from 'react';
 import './Dashboard.css';
+import React, { PureComponent } from 'react';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+
+const data = [
+    {
+        name: 'Nov 1',
+        uv: 2000,
+    }, {
+        name: 'Nov 4',
+        uv: 1000,
+    },
+    {
+        name: 'Nov 8',
+        uv: 4000,
+    },
+    {
+        name: 'Nov 12',
+        uv: 2000,
+    },
+    {
+        name: 'Nov 16',
+        uv: 3000,
+    },
+    {
+        name: 'Nov 20',
+        uv: 1000,
+    },
+    {
+        name: 'Nov 24',
+        uv: 3000,
+    },
+    {
+        name: 'Nov 28',
+        uv: 2000,
+    },
+    {
+        name: 'Nov 30',
+        uv: 4000,
+    },
+
+];
 
 const Day = () => {
-    return (
-        <div className='flex relative flex-col'>
-            <svg width="237" height="142" viewBox="0 0 237 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M26.4992 57C10.0772 57 19.0346 21.5 0 21.5V141.5H237V0C196.691 0 188.854 96.5 153.77 96.5C118.687 96.5 133.989 13.5 107.117 13.5C80.2441 13.5 42.9213 57 26.4992 57Z" fill="url(#paint0_linear_1079_21)" />
-                <defs>
-                    <linearGradient id="paint0_linear_1079_21" x1="118.5" y1="-47" x2="118.5" y2="141.5" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#1E2772" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                </defs>
-            </svg>
 
-            <svg className='chart__second absolute' width="237" height="142" viewBox="0 0 237 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M26.4992 57C10.0772 57 19.0346 21.5 0 21.5V141.5H237V0C196.691 0 188.854 96.5 153.77 96.5C118.687 96.5 133.989 13.5 107.117 13.5C80.2441 13.5 42.9213 57 26.4992 57Z" fill="url(#paint0_linear_623_1000)" />
+    return (
+        <div className='chart__day'>
+            <AreaChart width={480} height={162} data={data}>
                 <defs>
-                    <linearGradient id="paint0_linear_623_1000" x1="118.5" y1="-47" x2="118.5" y2="141.5" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#1E2772" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+                        <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
                     </linearGradient>
                 </defs>
-            </svg>
+                <Tooltip />
+                <Area type="monotone" dataKey="uv" strokeWidth={2} stroke="#8F00FF" fillOpacity={1} fill="url(#colorUv)" />
+            </AreaChart>
             <div className='point_names'>
                 <span>Nov 1</span>
                 <span>Nov 4</span>

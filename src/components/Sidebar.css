@@ -131,3 +131,10 @@
 .logout:hover {
     background: rgba(238, 238, 238, 0.2);
 }
+
+@media only screen and (max-width: 600px) {
+    .sidebar__container {
+        width: 465px;
+        height: 1187px;
+    }
+}

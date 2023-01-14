@@ -108,17 +108,17 @@ const Dashboard: FC = () => {
                                 >Day
                                 </NavLink>
                                 <NavLink
-                                    to='/week'
+                                    to='/'
                                     className={({ isActive }) => (isActive ? "link-active" : "")}
                                 >Week
                                 </NavLink>
                                 <NavLink
-                                    to="/month"
+                                    to="/"
                                     className={({ isActive }) => (isActive ? "link-active" : "")}
                                 >Month
                                 </NavLink>
                                 <NavLink
-                                    to="/year"
+                                    to="/"
                                     className={({ isActive }) => (isActive ? "link-active" : "")}
                                 >Year
                                 </NavLink>
