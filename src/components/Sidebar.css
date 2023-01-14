@@ -1,0 +1,133 @@
+.sidebar__container {
+    top: 0;
+    width: 465px;
+    height: 1187px;
+    background: #1E2772;
+    position: absolute;
+}
+
+.barang__logo {
+    margin-top: 40px;
+    display: flex;
+    font-size: 36px;
+    align-items: center;
+    color: aliceblue;
+    padding-left: 48px;
+}
+
+.links__container {
+    width: 464px;
+    margin-top: 115px;
+    margin-bottom: 28px;
+}
+
+.single__link__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.single__link__container li {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.single__link__container li:hover {
+    background: rgba(238, 238, 238, 0.2);
+}
+
+.active {
+    display: flex;
+    border-radius: 8px;
+    background: rgba(238, 238, 238, 0.2);
+}
+
+.active__dot {
+    position: absolute;
+    background-color: aliceblue;
+    height: 16px;
+    width: 4px;
+    border-radius: 8px;
+    left: 0;
+}
+
+.single__link {
+    display: flex;
+    column-gap: 22px;
+    padding-left: 95px;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 600;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdown__container {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.dropdown {
+    display: flex;
+    font-size: 18px;
+    color: aliceblue;
+    align-items: center;
+    column-gap: 26px;
+    font-weight: 600;
+    padding-left: 48px;
+    width: 100%;
+    cursor: pointer;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
+
+.dropdown:hover {
+    background: rgba(238, 238, 238, 0.2);
+}
+
+.dropdown__menus {
+    margin-top: 15px;
+    padding-left: 143px;
+}
+
+.dropdown__menus ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.dropdown__menus ul li {
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown__menus ul li:hover {
+    background: rgba(238, 238, 238, 0.2);
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: aliceblue;
+    height: 45px;
+    border-radius: 8px;
+    margin-top: 68px;
+    margin-left: 97px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.logout:hover {
+    background: rgba(238, 238, 238, 0.2);
+}

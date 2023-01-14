@@ -1,12 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Dashboard from './components/Dashboard';
+import Day from './components/Day';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <h1>hello App</h1>
+      <Navbar />
+      <Sidebar />
+      <Routes>
+        <Route path='/' element={<Dashboard />}>
+          <Route path='/' element={<Day />}></Route>
+        </Route>
+      </Routes>
     </div>
   )
 }

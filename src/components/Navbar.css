@@ -1,0 +1,62 @@
+.nav__container {
+    height: 80px;
+    width: 1456px;
+    background: white;
+    position: relative;
+    top: 0;
+    Left: 464px;
+    display: flex;
+    align-items: center;
+    padding-right: 47px;
+    justify-content: flex-end;
+}
+
+.seardh__box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 463px;
+    left: 126px;
+    /* left: 592px; */
+    border-radius: 5px;
+}
+
+.search__icon {
+    position: absolute;
+    margin-left: 16px;
+}
+
+.search__input {
+    border: 1px solid #A49999;
+    height: 100%;
+    width: 464px;
+    border-radius: 5px;
+    padding-left: 50px;
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.profile__box {
+    display: flex;
+    align-items: center;
+    right: 47px;
+    position: absolute;
+}
+
+.calender {
+    margin-right: 48px;
+    cursor: pointer;
+}
+
+.notification {
+    margin-right: 58px;
+    cursor: pointer;
+}
+
+.profile__image {
+    border-radius: 50%;
+    cursor: pointer;
+}
