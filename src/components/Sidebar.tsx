@@ -39,12 +39,12 @@ const Sidebar: FC = () => {
         {
             text: 'Expense',
             active: false,
-            path: '/'
+            path: '/expense'
         },
         {
             text: 'Notice',
             active: false,
-            path: '/expense'
+            path: '/notice'
         },
         {
             text: 'Departments',
